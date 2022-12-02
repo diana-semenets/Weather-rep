@@ -14,7 +14,7 @@ li {
 .wrapper {
   font-family: "Poppins", sans-serif;
   width: 800px;
-  height: 600px;
+  height: 650px;
   margin: 0 auto;
   color: rgb(51, 48, 48);
   background: linear-gradient(135deg, rgb(243, 216, 140) 26%, rgb(168, 129, 28));
@@ -118,16 +118,18 @@ li {
 }
 .main__date {
   max-width: 700px;
-  padding-top: 35px;
-  margin: 0 auto;
-  display: grid;
-  gap: 40px;
-  grid-template-columns: repeat(5, 1fr);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 20px auto 0;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px 1px rgba(117, 79, 7, 0.582);
+}
+.main__date-day {
+  font-weight: 500;
 }
 
-.main__seach-btn:hover {
+.main__label:hover {
   box-shadow: 5px 5px 5px 0px rgba(117, 79, 7, 0.582);
-  background: rgba(223, 199, 157, 0.582);
   transition: all ease 0.3s;
 }
 
@@ -152,8 +154,24 @@ li {
   margin-left: 50px;
 }
 
+.main__date-item {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
 .item {
-  width: 70px;
+  width: 110px;
+  text-align: center;
+  display: inline-table;
+}
+
+.main__date-deg {
+  font-size: 14px;
+}
+
+#deg__max {
+  margin-right: 15px;
+  font-weight: 600;
 }
 
 .place-span {
@@ -164,7 +182,7 @@ li {
 }
 
 .footer {
-  margin-top: 50px;
+  margin-top: 70px;
   text-align: center;
   font-size: 14px;
 }
